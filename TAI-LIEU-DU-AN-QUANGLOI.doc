@@ -1,0 +1,1088 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>100</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm 2.5cm 2cm 2.5cm;
+        }
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 13pt;
+            line-height: 1.6;
+            color: #222;
+        }
+        .cover-page {
+            text-align: center;
+            padding-top: 120px;
+            page-break-after: always;
+        }
+        .cover-page .logo-box {
+            width: 120px;
+            height: 120px;
+            border: 3px solid #2563eb;
+            border-radius: 20px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #2563eb;
+        }
+        .cover-title {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .cover-subtitle {
+            font-size: 18pt;
+            color: #2563eb;
+            margin-bottom: 40px;
+        }
+        .cover-info {
+            font-size: 13pt;
+            color: #555;
+            margin-top: 60px;
+        }
+        .cover-info table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        .cover-info td {
+            padding: 6px 16px;
+            text-align: left;
+        }
+        .cover-info td:first-child {
+            font-weight: bold;
+            color: #333;
+        }
+        .cover-line {
+            width: 200px;
+            height: 4px;
+            background: #2563eb;
+            margin: 30px auto;
+        }
+        
+        h1 {
+            font-size: 22pt;
+            color: #1e293b;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            page-break-before: always;
+        }
+        h1:first-of-type {
+            page-break-before: auto;
+        }
+        h2 {
+            font-size: 16pt;
+            color: #2563eb;
+            margin-top: 24px;
+            border-left: 4px solid #2563eb;
+            padding-left: 12px;
+        }
+        h3 {
+            font-size: 14pt;
+            color: #334155;
+            margin-top: 18px;
+        }
+        h4 {
+            font-size: 13pt;
+            color: #475569;
+            margin-top: 14px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 12px 0 20px;
+            font-size: 11pt;
+        }
+        table th {
+            background-color: #2563eb;
+            color: white;
+            font-weight: bold;
+            padding: 10px 12px;
+            text-align: left;
+            border: 1px solid #1d4ed8;
+        }
+        table td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        table tr:nth-child(even) td {
+            background-color: #f8fafc;
+        }
+        table tr:hover td {
+            background-color: #eff6ff;
+        }
+        
+        .highlight-box {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-left: 4px solid #2563eb;
+            padding: 14px 18px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+        .warning-box {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-left: 4px solid #f59e0b;
+            padding: 14px 18px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+        .success-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-left: 4px solid #22c55e;
+            padding: 14px 18px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+        .danger-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            padding: 14px 18px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+        
+        ul, ol {
+            margin: 8px 0 16px 20px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        
+        .check { color: #22c55e; font-weight: bold; }
+        .cross { color: #ef4444; font-weight: bold; }
+        .badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 10pt;
+            font-weight: bold;
+        }
+        .badge-blue { background: #dbeafe; color: #1d4ed8; }
+        .badge-green { background: #dcfce7; color: #16a34a; }
+        .badge-yellow { background: #fef9c3; color: #a16207; }
+        .badge-red { background: #fee2e2; color: #dc2626; }
+        
+        .toc a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        .toc li {
+            margin-bottom: 4px;
+        }
+        
+        .flow-diagram {
+            text-align: center;
+            margin: 20px 0;
+            padding: 16px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+        .flow-step {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 4px;
+        }
+        .flow-arrow {
+            display: inline-block;
+            font-size: 16pt;
+            color: #64748b;
+            margin: 0 4px;
+            vertical-align: middle;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 10pt;
+            color: #94a3b8;
+            margin-top: 40px;
+            padding-top: 16px;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .page-break { page-break-before: always; }
+    </style>
+</head>
+<body>
+
+<!-- ================================================================ -->
+<!-- TRANG BÌA                                                         -->
+<!-- ================================================================ -->
+<div class="cover-page">
+    <div style="font-size:64px; color:#2563eb; margin-bottom:20px;">&#9881;</div>
+    <div class="cover-title">TÀI LIỆU DỰ ÁN</div>
+    <div class="cover-subtitle">Hệ thống Quản lý Doanh nghiệp QUANGLOI</div>
+    <div class="cover-line"></div>
+    <p style="font-size:14pt; color:#64748b; font-style:italic;">
+        Tài liệu mô tả yêu cầu chức năng, kiến trúc hệ thống<br>
+        và kế hoạch triển khai dự án
+    </p>
+    <div class="cover-info">
+        <table>
+            <tr><td>Phiên bản:</td><td>1.0</td></tr>
+            <tr><td>Ngày tạo:</td><td>06/09/2026</td></tr>
+            <tr><td>Trạng thái:</td><td><span class="badge badge-yellow">Chờ xác nhận</span></td></tr>
+            <tr><td>Tham khảo:</td><td>CloudPro CRM (vps.cloudpro.vn)</td></tr>
+            <tr><td>Người tạo:</td><td>QUANGLOI Development Team</td></tr>
+        </table>
+    </div>
+</div>
+
+<!-- ================================================================ -->
+<!-- MỤC LỤC                                                          -->
+<!-- ================================================================ -->
+<h1 style="page-break-before: auto;">MỤC LỤC</h1>
+<div class="toc">
+<ol style="font-size:12pt;">
+    <li><a href="#sec1">Tổng quan dự án</a></li>
+    <li><a href="#sec2">Các tính năng chính</a></li>
+    <li><a href="#sec3">Cấu trúc Menu hệ thống</a></li>
+    <li><a href="#sec4">Module Dashboard (Trang chủ)</a></li>
+    <li><a href="#sec5">Module Quản lý Khách hàng</a></li>
+    <li><a href="#sec6">Module Quản lý Thiết bị</a></li>
+    <li><a href="#sec7">Module Quản lý Đơn hàng</a>
+        <ol type="a">
+            <li>Form tạo đơn hàng</li>
+            <li>Quy trình duyệt đơn hàng</li>
+        </ol>
+    </li>
+    <li><a href="#sec8">Module Quản lý Kho hàng</a></li>
+    <li><a href="#sec9">Module Quản lý Sản phẩm</a></li>
+    <li><a href="#sec10">Module Quản lý Kỹ thuật</a></li>
+    <li><a href="#sec11">Module CSKH (Chăm sóc khách hàng)</a></li>
+    <li><a href="#sec12">Module Giao hàng</a></li>
+    <li><a href="#sec13">Module Báo cáo & Thống kê</a></li>
+    <li><a href="#sec14">Hệ thống Thông báo & Âm thanh</a></li>
+    <li><a href="#sec15">Phân quyền Người dùng</a></li>
+    <li><a href="#sec16">Yêu cầu Kỹ thuật</a></li>
+    <li><a href="#sec17">Lộ trình Phát triển</a></li>
+    <li><a href="#sec18">Danh sách cần xác nhận từ Khách hàng</a></li>
+</ol>
+</div>
+
+<!-- ================================================================ -->
+<!-- 1. TỔNG QUAN DỰ ÁN                                               -->
+<!-- ================================================================ -->
+<h1 id="sec1">1. TỔNG QUAN DỰ ÁN</h1>
+
+<table>
+    <tr><th style="width:35%">Thông tin</th><th>Chi tiết</th></tr>
+    <tr><td>Tên dự án</td><td><b>Hệ thống Quản lý Doanh nghiệp QUANGLOI</b></td></tr>
+    <tr><td>Mô tả</td><td>Xây dựng hệ thống web/app quản lý toàn diện hoạt động kinh doanh bao gồm: khách hàng, thiết bị, đơn hàng, kho hàng, sản phẩm, kỹ thuật với hệ thống thông báo thời gian thực</td></tr>
+    <tr><td>Nền tảng</td><td>Web Application (Responsive - hỗ trợ PC, Tablet, Mobile)</td></tr>
+    <tr><td>Thiết kế tham khảo</td><td>CloudPro CRM (https://vps.cloudpro.vn)</td></tr>
+    <tr><td>Công nghệ Frontend</td><td>HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Chart.js</td></tr>
+    <tr><td>Công nghệ Backend (đề xuất)</td><td>PHP Laravel / Node.js + MySQL/PostgreSQL</td></tr>
+</table>
+
+<div class="highlight-box">
+    <b>&#128161; Mục tiêu:</b> Tạo một hệ thống quản lý tập trung, chuyên nghiệp, giúp doanh nghiệp:
+    <ul>
+        <li>Quản lý khách hàng và đối tác hiệu quả</li>
+        <li>Theo dõi đơn hàng từ tạo đến hoàn thành với quy trình duyệt rõ ràng</li>
+        <li>Quản lý thiết bị, bảo trì và kỹ thuật viên</li>
+        <li>Kiểm soát kho hàng, nhập xuất, cảnh báo tồn kho</li>
+        <li>Nhận thông báo tức thì khi có đơn hàng mới (âm thanh + push notification)</li>
+    </ul>
+</div>
+
+<!-- ================================================================ -->
+<!-- 2. CÁC TÍNH NĂNG CHÍNH                                           -->
+<!-- ================================================================ -->
+<h1 id="sec2">2. CÁC TÍNH NĂNG CHÍNH</h1>
+
+<table>
+    <tr>
+        <th style="width:5%">STT</th>
+        <th style="width:25%">Tính năng</th>
+        <th>Mô tả chi tiết</th>
+        <th style="width:12%">Trạng thái</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td><b>Quản lý Khách hàng</b></td>
+        <td>CRUD khách hàng, người liên hệ, công ty, nhà cung cấp. Phân loại khách hàng (VIP/Thường/Tiềm năng). Lịch sử giao dịch.</td>
+        <td><span class="badge badge-green">Template &#10003;</span></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><b>Quản lý Thiết bị</b></td>
+        <td>Theo dõi thiết bị theo serial, vị trí lắp đặt, trạng thái hoạt động, bảo hành, lịch bảo trì định kỳ.</td>
+        <td><span class="badge badge-green">Template &#10003;</span></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><b>Quản lý Đơn hàng</b></td>
+        <td>Tạo đơn hàng, thêm sản phẩm, tính chiết khấu/VAT, gửi duyệt. Quy trình duyệt đơn hàng nhiều cấp.</td>
+        <td><span class="badge badge-green">Template &#10003;</span></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><b>Duyệt đơn hàng</b></td>
+        <td>Quản lý duyệt/từ chối đơn hàng. Thông báo âm thanh khi có đơn mới chờ duyệt.</td>
+        <td><span class="badge badge-green">Template &#10003;</span></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td><b>Quản lý Kho hàng</b></td>
+        <td>Tồn kho, phiếu nhập kho, phiếu xuất kho, chuyển kho, kiểm kho. Cảnh báo khi sản phẩm sắp hết/hết hàng.</td>
+        <td><span class="badge badge-green">Template &#10003;</span></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td><b>Quản lý Sản phẩm</b></td>
+        <td>Danh mục sản phẩm, dòng sản phẩm, combo, dịch vụ. Quản lý giá bán, giá nhập, hình ảnh.</td>
+        <td><span class="badge badge-green">Template &#10003;</span></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td><b>Quản lý Kỹ thuật</b></td>
+        <td>Điều phối KTV, phiếu công tác, khảo sát hiện trường, ứng vật tư, bảo trì, cảnh báo vật tư.</td>
+        <td><span class="badge badge-green">Template &#10003;</span></td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td><b>Thông báo thời gian thực</b></td>
+        <td>Âm thanh beep khi có đơn mới, Toast notification, Browser push notification, Badge counter.</td>
+        <td><span class="badge badge-green">Demo &#10003;</span></td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td><b>Dashboard</b></td>
+        <td>KPI cards (8 chỉ số), biểu đồ doanh thu, biểu đồ trạng thái đơn hàng, đơn hàng gần đây, timeline hoạt động.</td>
+        <td><span class="badge badge-green">Template &#10003;</span></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td><b>Báo cáo & Thống kê</b></td>
+        <td>Báo cáo bán hàng, doanh thu, tồn kho, kỹ thuật, khách hàng. Export Excel/PDF.</td>
+        <td><span class="badge badge-yellow">Giai đoạn 2</span></td>
+    </tr>
+</table>
+
+<!-- ================================================================ -->
+<!-- 3. CẤU TRÚC MENU HỆ THỐNG                                        -->
+<!-- ================================================================ -->
+<h1 id="sec3">3. CẤU TRÚC MENU HỆ THỐNG</h1>
+
+<p>Hệ thống sử dụng sidebar navigation (thanh điều hướng bên trái) theo phong cách CloudPro CRM, với cấu trúc menu phân cấp như sau:</p>
+
+<h2>3.1 Menu chính</h2>
+<table>
+    <tr><th style="width:5%">STT</th><th style="width:22%">Menu chính</th><th style="width:8%">Icon</th><th>Menu con</th></tr>
+    <tr>
+        <td>1</td>
+        <td><b>TRANG CHỦ</b></td>
+        <td>&#127968;</td>
+        <td>Dashboard tổng quan</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><b>DANH MỤC</b></td>
+        <td>&#128203;</td>
+        <td>Công ty &bull; Người liên hệ &bull; Đầu mối &bull; Nhà cung cấp &bull; Sản phẩm &bull; Dịch vụ &bull; Sản phẩm Combo &bull; Dòng sản phẩm &bull; Thiết bị &bull; Địa điểm lắp đặt &bull; Đơn vị</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><b>BÁN HÀNG</b></td>
+        <td>&#128722;</td>
+        <td>Cơ hội &bull; Báo giá &bull; Bảng giá &bull; <b style="color:#2563eb">Đơn hàng &#9733;</b> &bull; Hợp đồng &bull; Hóa đơn &bull; Phiếu thu &bull; Phiếu chi &bull; Hợp đồng DV &bull; Gói sản phẩm &bull; Bảng kê</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><b>MUA HÀNG</b></td>
+        <td>&#128717;</td>
+        <td>Đơn mua hàng &bull; Hóa đơn mua &bull; Phiếu nhập mua</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td><b>KỸ THUẬT</b></td>
+        <td>&#128295;</td>
+        <td>Điều phối công việc &bull; Case &bull; Task &bull; Thiết bị &bull; Phiếu công tác &bull; P.Ứng vật tư &bull; P.Tiếp nhận VT &bull; P.Khảo sát &bull; Phiếu nhập kho &bull; P.Bảo trì &bull; Cảnh báo vật tư</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td><b>CSKH</b></td>
+        <td>&#127897;</td>
+        <td>Yêu cầu hỗ trợ &bull; Phản hồi KH &bull; Cuộc hẹn</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td><b>QUẢN LÝ KHO</b></td>
+        <td>&#128230;</td>
+        <td>Tồn kho &bull; Phiếu nhập kho &bull; Phiếu xuất kho &bull; Chuyển kho &bull; Kiểm kho</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td><b>VẬN HÀNH</b></td>
+        <td>&#9881;</td>
+        <td>Dự án &bull; Lịch trình</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td><b>GIAO HÀNG</b></td>
+        <td>&#128666;</td>
+        <td>Phiếu giao hàng &bull; Phiếu nhập kho &bull; Phiếu vận chuyển</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td><b>BÁO CÁO</b></td>
+        <td>&#128200;</td>
+        <td>Báo cáo bán hàng &bull; Báo cáo doanh thu &bull; Báo cáo tồn kho &bull; Báo cáo kỹ thuật &bull; Báo cáo khách hàng</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td><b>CẤU HÌNH</b></td>
+        <td>&#9881;</td>
+        <td>Cài đặt chung &bull; Quản lý người dùng &bull; Phân quyền &bull; Cài đặt thông báo</td>
+    </tr>
+</table>
+
+<!-- ================================================================ -->
+<!-- 4. MODULE DASHBOARD                                               -->
+<!-- ================================================================ -->
+<h1 id="sec4">4. MODULE DASHBOARD (Trang chủ)</h1>
+
+<h2>4.1 Thẻ KPI Thống kê</h2>
+<p>Trang Dashboard hiển thị 8 thẻ KPI tổng quan:</p>
+
+<table>
+    <tr><th>STT</th><th>Chỉ số</th><th>Mô tả</th><th>Màu sắc</th></tr>
+    <tr><td>1</td><td><b>Đơn hàng</b></td><td>Tổng số đơn hàng trong kỳ</td><td><span class="badge badge-blue">Xanh dương</span></td></tr>
+    <tr><td>2</td><td><b>Doanh thu</b></td><td>Tổng doanh thu (VNĐ)</td><td><span class="badge badge-green">Xanh lá</span></td></tr>
+    <tr><td>3</td><td><b>Khách hàng</b></td><td>Tổng số khách hàng</td><td><span class="badge badge-yellow">Vàng</span></td></tr>
+    <tr><td>4</td><td><b>Thiết bị</b></td><td>Tổng số thiết bị đang quản lý</td><td><span class="badge badge-red">Đỏ</span></td></tr>
+    <tr><td>5</td><td><b>Cuộc hẹn</b></td><td>Số cuộc hẹn hôm nay</td><td>Cyan</td></tr>
+    <tr><td>6</td><td><b>Thực chi</b></td><td>Tổng chi phí thực tế</td><td>Tím</td></tr>
+    <tr><td>7</td><td><b>Đơn chờ duyệt</b></td><td>Số đơn hàng đang chờ duyệt</td><td>Teal</td></tr>
+    <tr><td>8</td><td><b>SP trong kho</b></td><td>Tổng sản phẩm có trong kho</td><td>Cam</td></tr>
+</table>
+
+<h2>4.2 Biểu đồ</h2>
+<ul>
+    <li><b>Biểu đồ Doanh thu:</b> Biểu đồ cột kết hợp đường (Bar + Line) hiển thị doanh thu, chi phí và lợi nhuận 12 tháng</li>
+    <li><b>Biểu đồ Trạng thái Đơn hàng:</b> Biểu đồ tròn (Doughnut) thể hiện tỷ lệ: Hoàn thành (65%), Đang xử lý (20%), Chờ duyệt (10%), Đã hủy (5%)</li>
+</ul>
+
+<h2>4.3 Bảng & Timeline</h2>
+<ul>
+    <li><b>Đơn hàng gần đây:</b> 5 đơn hàng mới nhất với cột: Mã đơn, Khách hàng, Sản phẩm, Tổng tiền, Trạng thái, Ngày tạo, Thao tác</li>
+    <li><b>Hoạt động gần đây:</b> Timeline hiển thị hành động của nhân viên (duyệt đơn, tạo đơn, nhập kho, cập nhật KH, cảnh báo tồn kho)</li>
+</ul>
+
+<!-- ================================================================ -->
+<!-- 5. MODULE QUẢN LÝ KHÁCH HÀNG                                     -->
+<!-- ================================================================ -->
+<h1 id="sec5">5. MODULE QUẢN LÝ KHÁCH HÀNG</h1>
+
+<h2>5.1 Danh sách trường dữ liệu</h2>
+<table>
+    <tr><th>STT</th><th>Trường dữ liệu</th><th>Kiểu dữ liệu</th><th>Bắt buộc</th><th>Ghi chú</th></tr>
+    <tr><td>1</td><td>Mã KH</td><td>Text (tự sinh)</td><td><span class="check">&#10003;</span></td><td>Tự động tạo, format: KH-XXXXX</td></tr>
+    <tr><td>2</td><td>Họ tên</td><td>Text</td><td><span class="check">&#10003;</span></td><td></td></tr>
+    <tr><td>3</td><td>Công ty</td><td>Dropdown/Text</td><td></td><td>Liên kết module Công ty</td></tr>
+    <tr><td>4</td><td>Điện thoại</td><td>Phone</td><td><span class="check">&#10003;</span></td><td>Validation SĐT Việt Nam</td></tr>
+    <tr><td>5</td><td>Email</td><td>Email</td><td></td><td>Validation email</td></tr>
+    <tr><td>6</td><td>Địa chỉ</td><td>Text + Dropdown</td><td></td><td>Tỉnh/Thành &rarr; Quận/Huyện &rarr; Phường/Xã</td></tr>
+    <tr><td>7</td><td>Phân loại</td><td>Dropdown</td><td></td><td>VIP / Thường / Tiềm năng</td></tr>
+    <tr><td>8</td><td>Nguồn KH</td><td>Dropdown</td><td></td><td>Online / Giới thiệu / Quảng cáo / Khác</td></tr>
+    <tr><td>9</td><td>Nhân viên phụ trách</td><td>Dropdown</td><td></td><td>Danh sách nhân viên</td></tr>
+    <tr><td>10</td><td>Ghi chú</td><td>Textarea</td><td></td><td>Ghi chú nội bộ</td></tr>
+    <tr><td>11</td><td>Ngày tạo</td><td>DateTime (hệ thống)</td><td></td><td>Tự động ghi nhận</td></tr>
+</table>
+
+<h2>5.2 Chức năng</h2>
+<ul>
+    <li>Thêm mới / Sửa / Xóa / Xem chi tiết khách hàng</li>
+    <li>Tìm kiếm theo tên, SĐT, email, công ty</li>
+    <li>Lọc theo phân loại, nguồn, nhân viên phụ trách</li>
+    <li>Export danh sách ra Excel</li>
+    <li>Import khách hàng từ file Excel</li>
+    <li>Xem lịch sử giao dịch (đơn hàng, hóa đơn, thiết bị liên quan)</li>
+</ul>
+
+<!-- ================================================================ -->
+<!-- 6. MODULE QUẢN LÝ THIẾT BỊ                                       -->
+<!-- ================================================================ -->
+<h1 id="sec6">6. MODULE QUẢN LÝ THIẾT BỊ</h1>
+
+<h2>6.1 Danh sách trường dữ liệu</h2>
+<table>
+    <tr><th>STT</th><th>Trường dữ liệu</th><th>Kiểu dữ liệu</th><th>Bắt buộc</th><th>Ghi chú</th></tr>
+    <tr><td>1</td><td>Mã TB</td><td>Text (tự sinh)</td><td><span class="check">&#10003;</span></td><td>Format: TB-XXXXX</td></tr>
+    <tr><td>2</td><td>Tên thiết bị</td><td>Text</td><td><span class="check">&#10003;</span></td><td></td></tr>
+    <tr><td>3</td><td>Loại thiết bị</td><td>Dropdown</td><td><span class="check">&#10003;</span></td><td>Camera IP / Camera PTZ / Đầu ghi / Báo động / ...</td></tr>
+    <tr><td>4</td><td>Serial Number</td><td>Text</td><td><span class="check">&#10003;</span></td><td>Mã serial nhà sản xuất</td></tr>
+    <tr><td>5</td><td>Nhà sản xuất</td><td>Dropdown</td><td></td><td></td></tr>
+    <tr><td>6</td><td>Khách hàng</td><td>Dropdown</td><td></td><td>Liên kết module KH</td></tr>
+    <tr><td>7</td><td>Địa điểm lắp đặt</td><td>Text</td><td></td><td>Địa chỉ cụ thể</td></tr>
+    <tr><td>8</td><td>Ngày lắp đặt</td><td>Date</td><td></td><td></td></tr>
+    <tr><td>9</td><td>Trạng thái</td><td>Dropdown</td><td><span class="check">&#10003;</span></td><td>Hoạt động / Bảo trì / Hỏng / Chưa lắp</td></tr>
+    <tr><td>10</td><td>Bảo hành đến</td><td>Date</td><td></td><td>Cảnh báo khi sắp hết BH</td></tr>
+    <tr><td>11</td><td>Hình ảnh</td><td>File Upload</td><td></td><td>Hỗ trợ nhiều hình</td></tr>
+    <tr><td>12</td><td>Ghi chú</td><td>Textarea</td><td></td><td></td></tr>
+</table>
+
+<h2>6.2 Chức năng</h2>
+<ul>
+    <li>CRUD thiết bị với đầy đủ thông tin</li>
+    <li>Tìm kiếm theo serial, tên, loại, khách hàng</li>
+    <li>Lọc theo trạng thái, loại thiết bị</li>
+    <li>Cảnh báo bảo hành sắp hết</li>
+    <li>Lịch sử bảo trì / sửa chữa</li>
+    <li>Liên kết với phiếu công tác kỹ thuật</li>
+</ul>
+
+<!-- ================================================================ -->
+<!-- 7. MODULE QUẢN LÝ ĐƠN HÀNG                                      -->
+<!-- ================================================================ -->
+<h1 id="sec7">7. MODULE QUẢN LÝ ĐƠN HÀNG</h1>
+
+<div class="highlight-box">
+    <b>&#11088; Đây là module trọng tâm</b> của hệ thống, bao gồm tạo đơn hàng, duyệt đơn hàng, và thông báo âm thanh khi có đơn mới.
+</div>
+
+<h2>7.1 Danh sách trường dữ liệu - Đơn hàng</h2>
+<table>
+    <tr><th>STT</th><th>Trường dữ liệu</th><th>Kiểu</th><th>Bắt buộc</th><th>Ghi chú</th></tr>
+    <tr><td>1</td><td>Mã đơn hàng</td><td>Text (tự sinh)</td><td><span class="check">&#10003;</span></td><td>Format: DH-XXXXX</td></tr>
+    <tr><td>2</td><td>Khách hàng</td><td>Dropdown</td><td><span class="check">&#10003;</span></td><td>Liên kết module KH</td></tr>
+    <tr><td>3</td><td>Người liên hệ</td><td>Text</td><td></td><td></td></tr>
+    <tr><td>4</td><td>Điện thoại</td><td>Phone</td><td><span class="check">&#10003;</span></td><td></td></tr>
+    <tr><td>5</td><td>Email</td><td>Email</td><td></td><td></td></tr>
+    <tr><td>6</td><td>Địa chỉ giao hàng</td><td>Text</td><td></td><td></td></tr>
+    <tr style="background:#eff6ff;"><td colspan="5"><b>&#128230; CHI TIẾT SẢN PHẨM (Bảng con - nhiều dòng)</b></td></tr>
+    <tr><td>7a</td><td>&nbsp;&nbsp;&nbsp;Sản phẩm</td><td>Dropdown</td><td><span class="check">&#10003;</span></td><td>Liên kết module SP</td></tr>
+    <tr><td>7b</td><td>&nbsp;&nbsp;&nbsp;Số lượng</td><td>Number</td><td><span class="check">&#10003;</span></td><td>Min: 1</td></tr>
+    <tr><td>7c</td><td>&nbsp;&nbsp;&nbsp;Đơn giá</td><td>Currency</td><td><span class="check">&#10003;</span></td><td>Tự điền từ bảng giá SP</td></tr>
+    <tr><td>7d</td><td>&nbsp;&nbsp;&nbsp;Chiết khấu</td><td>Percent</td><td></td><td>0-100%</td></tr>
+    <tr><td>7e</td><td>&nbsp;&nbsp;&nbsp;VAT</td><td>Dropdown</td><td></td><td>0% / 8% / 10%</td></tr>
+    <tr><td>7f</td><td>&nbsp;&nbsp;&nbsp;Thành tiền</td><td>Currency (tính)</td><td></td><td>= SL × Đơn giá × (1-CK) × (1+VAT)</td></tr>
+    <tr style="background:#eff6ff;"><td colspan="5"><b>&#128202; TỔNG KẾT</b></td></tr>
+    <tr><td>8</td><td>Tạm tính</td><td>Currency (tính)</td><td></td><td>Tổng thành tiền trước VAT</td></tr>
+    <tr><td>9</td><td>Tổng chiết khấu</td><td>Currency (tính)</td><td></td><td></td></tr>
+    <tr><td>10</td><td>Tổng VAT</td><td>Currency (tính)</td><td></td><td></td></tr>
+    <tr><td>11</td><td><b>TỔNG CỘNG</b></td><td>Currency (tính)</td><td></td><td><b>Số tiền cuối cùng</b></td></tr>
+    <tr><td>12</td><td>Ghi chú</td><td>Textarea</td><td></td><td></td></tr>
+    <tr><td>13</td><td>Trạng thái</td><td>Dropdown</td><td><span class="check">&#10003;</span></td><td>Chờ duyệt / Đã duyệt / Đang xử lý / Hoàn thành / Đã hủy</td></tr>
+    <tr><td>14</td><td>Người tạo</td><td>System</td><td></td><td>Tự ghi nhận</td></tr>
+    <tr><td>15</td><td>Người duyệt</td><td>System</td><td></td><td>Tự ghi nhận khi duyệt</td></tr>
+    <tr><td>16</td><td>Ngày tạo</td><td>DateTime</td><td></td><td></td></tr>
+    <tr><td>17</td><td>Ngày duyệt</td><td>DateTime</td><td></td><td></td></tr>
+</table>
+
+<h2>7.2 Quy trình Duyệt đơn hàng</h2>
+
+<div class="flow-diagram">
+    <span class="flow-step" style="background:#dbeafe; color:#1d4ed8;">&#128221; Tạo đơn</span>
+    <span class="flow-arrow">&rarr;</span>
+    <span class="flow-step" style="background:#fef9c3; color:#a16207;">&#9202; Chờ duyệt</span>
+    <span class="flow-arrow">&rarr;</span>
+    <span class="flow-step" style="background:#dcfce7; color:#16a34a;">&#10003; Đã duyệt</span>
+    <span class="flow-arrow">&rarr;</span>
+    <span class="flow-step" style="background:#e0e7ff; color:#4338ca;">&#9881; Đang xử lý</span>
+    <span class="flow-arrow">&rarr;</span>
+    <span class="flow-step" style="background:#dcfce7; color:#16a34a;">&#9989; Hoàn thành</span>
+    <br><br>
+    <span style="color:#64748b;">Nếu từ chối:</span>
+    <span class="flow-step" style="background:#fef9c3; color:#a16207;">&#9202; Chờ duyệt</span>
+    <span class="flow-arrow">&rarr;</span>
+    <span class="flow-step" style="background:#fee2e2; color:#dc2626;">&#10007; Đã hủy</span>
+</div>
+
+<div class="success-box">
+    <b>&#128276; Thông báo tự động:</b> Khi đơn hàng mới được tạo và ở trạng thái "Chờ duyệt", hệ thống tự động:
+    <ol>
+        <li>Phát <b>âm thanh thông báo</b> (3 tiếng beep hoặc file MP3 tùy chỉnh)</li>
+        <li>Hiển thị <b>Toast pop-up</b> góc trên bên phải màn hình (8 giây)</li>
+        <li>Gửi <b>Browser Push Notification</b> (hoạt động khi tab không active)</li>
+        <li>Cập nhật <b>Badge counter</b> trên icon chuông và sidebar</li>
+        <li>Cập nhật <b>Title trang</b> hiển thị số thông báo chưa đọc</li>
+    </ol>
+</div>
+
+<h2>7.3 Các thao tác trên đơn hàng</h2>
+<table>
+    <tr><th>Thao tác</th><th>Mô tả</th><th>Quyền</th></tr>
+    <tr><td><b>Tạo đơn</b></td><td>Tạo đơn hàng mới, thêm sản phẩm, gửi duyệt</td><td>Nhân viên BH, Quản lý, Admin</td></tr>
+    <tr><td><b>Lưu nháp</b></td><td>Lưu đơn hàng chưa hoàn chỉnh</td><td>Nhân viên BH, Quản lý, Admin</td></tr>
+    <tr><td><b>Gửi duyệt</b></td><td>Gửi đơn lên quản lý để duyệt</td><td>Nhân viên BH, Quản lý, Admin</td></tr>
+    <tr><td><b>Phê duyệt</b></td><td>Duyệt đơn hàng, chuyển sang "Đang xử lý"</td><td>Quản lý, Admin</td></tr>
+    <tr><td><b>Từ chối</b></td><td>Từ chối đơn hàng, ghi lý do</td><td>Quản lý, Admin</td></tr>
+    <tr><td><b>In đơn</b></td><td>In phiếu đơn hàng dạng PDF</td><td>Tất cả</td></tr>
+    <tr><td><b>Xuất Excel</b></td><td>Export danh sách đơn hàng ra Excel</td><td>Quản lý, Admin</td></tr>
+</table>
+
+<!-- ================================================================ -->
+<!-- 8. MODULE QUẢN LÝ KHO HÀNG                                       -->
+<!-- ================================================================ -->
+<h1 id="sec8">8. MODULE QUẢN LÝ KHO HÀNG</h1>
+
+<h2>8.1 Tổng quan chức năng</h2>
+<table>
+    <tr><th>Chức năng</th><th>Mô tả chi tiết</th></tr>
+    <tr>
+        <td><b>Xem tồn kho</b></td>
+        <td>Hiển thị tồn kho theo sản phẩm, theo kho. Thẻ thống kê: Tổng SP, Tổng tồn kho, Sắp hết hàng, Hết hàng. Bảng chi tiết: Mã SP, Tên, Kho, Tồn đầu kỳ, Nhập trong kỳ, Xuất trong kỳ, Tồn cuối kỳ.</td>
+    </tr>
+    <tr>
+        <td><b>Phiếu nhập kho</b></td>
+        <td>Tạo phiếu nhập kho từ nhà cung cấp hoặc từ đơn mua hàng. Chi tiết: SP, SL nhập, giá nhập, tổng tiền.</td>
+    </tr>
+    <tr>
+        <td><b>Phiếu xuất kho</b></td>
+        <td>Tạo phiếu xuất kho theo đơn hàng/phiếu giao hàng. Tự động trừ tồn kho.</td>
+    </tr>
+    <tr>
+        <td><b>Chuyển kho</b></td>
+        <td>Chuyển sản phẩm giữa các kho. Ghi nhận kho nguồn, kho đích, SL chuyển.</td>
+    </tr>
+    <tr>
+        <td><b>Kiểm kho</b></td>
+        <td>Tạo phiếu kiểm kho, so sánh tồn thực tế và tồn hệ thống, điều chỉnh chênh lệch.</td>
+    </tr>
+</table>
+
+<h2>8.2 Cảnh báo tồn kho</h2>
+<div class="warning-box">
+    <b>&#9888; Cảnh báo tự động:</b> Hệ thống tự động cảnh báo khi:
+    <ul>
+        <li>Sản phẩm có tồn kho dưới <b>mức tối thiểu</b> (cấu hình cho từng SP)</li>
+        <li>Sản phẩm <b>hết hàng</b> (tồn = 0)</li>
+        <li>Hiển thị cảnh báo trên Dashboard và module Kỹ thuật</li>
+    </ul>
+</div>
+
+<!-- ================================================================ -->
+<!-- 9. MODULE QUẢN LÝ SẢN PHẨM                                      -->
+<!-- ================================================================ -->
+<h1 id="sec9">9. MODULE QUẢN LÝ SẢN PHẨM</h1>
+
+<h2>9.1 Danh sách trường dữ liệu</h2>
+<table>
+    <tr><th>STT</th><th>Trường dữ liệu</th><th>Kiểu</th><th>Bắt buộc</th><th>Ghi chú</th></tr>
+    <tr><td>1</td><td>Mã SP</td><td>Text (tự sinh)</td><td><span class="check">&#10003;</span></td><td>Format: SP-XXXXX</td></tr>
+    <tr><td>2</td><td>Tên sản phẩm</td><td>Text</td><td><span class="check">&#10003;</span></td><td></td></tr>
+    <tr><td>3</td><td>Hình ảnh</td><td>File Upload</td><td></td><td>Hỗ trợ nhiều ảnh, thumbnail</td></tr>
+    <tr><td>4</td><td>Dòng sản phẩm</td><td>Dropdown</td><td></td><td>Danh mục dòng SP</td></tr>
+    <tr><td>5</td><td>Đơn giá bán</td><td>Currency</td><td><span class="check">&#10003;</span></td><td>Giá bán lẻ</td></tr>
+    <tr><td>6</td><td>Giá nhập</td><td>Currency</td><td></td><td>Giá mua từ NCC</td></tr>
+    <tr><td>7</td><td>Đơn vị tính</td><td>Dropdown</td><td><span class="check">&#10003;</span></td><td>Cái / Bộ / Hộp / Thùng / ...</td></tr>
+    <tr><td>8</td><td>Tồn kho</td><td>Number (tính)</td><td></td><td>Tự tính từ module Kho</td></tr>
+    <tr><td>9</td><td>Mô tả</td><td>Rich Text Editor</td><td></td><td>Mô tả chi tiết SP</td></tr>
+    <tr><td>10</td><td>Thông số kỹ thuật</td><td>Rich Text</td><td></td><td></td></tr>
+    <tr><td>11</td><td>Trạng thái</td><td>Dropdown</td><td><span class="check">&#10003;</span></td><td>Đang bán / Ngừng bán / Sắp ra mắt</td></tr>
+</table>
+
+<h2>9.2 Chức năng bổ sung</h2>
+<ul>
+    <li><b>Import Excel:</b> Nhập hàng loạt sản phẩm từ file Excel (.xlsx)</li>
+    <li><b>Export Excel:</b> Xuất danh sách sản phẩm ra file Excel</li>
+    <li><b>Sản phẩm Combo:</b> Gộp nhiều SP thành 1 combo với giá ưu đãi</li>
+    <li><b>Bảng giá:</b> Quản lý nhiều bảng giá cho khách hàng khác nhau (lẻ/sỉ/đại lý)</li>
+</ul>
+
+<!-- ================================================================ -->
+<!-- 10. MODULE QUẢN LÝ KỸ THUẬT                                      -->
+<!-- ================================================================ -->
+<h1 id="sec10">10. MODULE QUẢN LÝ KỸ THUẬT</h1>
+
+<h2>10.1 Các chức năng kỹ thuật</h2>
+<table>
+    <tr><th>Chức năng</th><th>Mô tả</th><th>Trường dữ liệu chính</th></tr>
+    <tr>
+        <td><b>Điều phối công việc</b></td>
+        <td>Phân công KTV, lên lịch, theo dõi tiến độ</td>
+        <td>KTV, Ngày, Loại CV, Trạng thái, Ưu tiên</td>
+    </tr>
+    <tr>
+        <td><b>Case</b></td>
+        <td>Quản lý các case kỹ thuật từ CSKH</td>
+        <td>Mã case, KH, Mô tả lỗi, KTV, Trạng thái</td>
+    </tr>
+    <tr>
+        <td><b>Task</b></td>
+        <td>Quản lý task công việc nội bộ</td>
+        <td>Tiêu đề, Người giao, Người nhận, Deadline, %</td>
+    </tr>
+    <tr>
+        <td><b>Phiếu công tác</b></td>
+        <td>Phiếu cho KTV đi hiện trường lắp đặt/sửa chữa</td>
+        <td>Mã phiếu, KH, Địa điểm, KTV, Ngày, Kết quả</td>
+    </tr>
+    <tr>
+        <td><b>P. Ứng vật tư</b></td>
+        <td>KTV yêu cầu ứng vật tư từ kho</td>
+        <td>KTV, DS vật tư, SL, Kho xuất, Duyệt</td>
+    </tr>
+    <tr>
+        <td><b>P. Tiếp nhận VT</b></td>
+        <td>Ghi nhận KTV tiếp nhận vật tư từ kho</td>
+        <td>Phiếu ứng, KTV nhận, SL thực nhận, Ký</td>
+    </tr>
+    <tr>
+        <td><b>P. Khảo sát</b></td>
+        <td>Phiếu khảo sát hiện trường trước lắp đặt</td>
+        <td>KH, Địa điểm, Hình ảnh, Đề xuất giải pháp</td>
+    </tr>
+    <tr>
+        <td><b>P. Bảo trì</b></td>
+        <td>Lịch bảo trì định kỳ cho thiết bị</td>
+        <td>Thiết bị, KH, Chu kỳ, Lần cuối, Lần tới</td>
+    </tr>
+    <tr>
+        <td><b>Cảnh báo vật tư</b></td>
+        <td>Cảnh báo khi vật tư dưới mức tối thiểu</td>
+        <td>Vật tư, Tồn hiện tại, Mức tối thiểu, Trạng thái</td>
+    </tr>
+</table>
+
+<h2>10.2 Thẻ KPI Kỹ thuật</h2>
+<ul>
+    <li><b>Đang thực hiện:</b> Số phiếu công tác đang xử lý</li>
+    <li><b>Chờ xử lý:</b> Số phiếu chưa được phân công</li>
+    <li><b>Đã hoàn thành:</b> Tổng phiếu đã hoàn thành</li>
+    <li><b>Cảnh báo vật tư:</b> Số vật tư dưới mức tối thiểu</li>
+</ul>
+
+<!-- ================================================================ -->
+<!-- 11. MODULE CSKH                                                   -->
+<!-- ================================================================ -->
+<h1 id="sec11">11. MODULE CSKH (Chăm sóc Khách hàng)</h1>
+
+<table>
+    <tr><th>Chức năng</th><th>Mô tả</th></tr>
+    <tr><td><b>Yêu cầu hỗ trợ (Ticket)</b></td><td>Tiếp nhận yêu cầu hỗ trợ từ khách hàng, phân công xử lý, theo dõi trạng thái (Mới / Đang xử lý / Đã giải quyết / Đóng)</td></tr>
+    <tr><td><b>Phản hồi KH</b></td><td>Ghi nhận phản hồi, đánh giá từ khách hàng sau bán hàng/lắp đặt</td></tr>
+    <tr><td><b>Cuộc hẹn</b></td><td>Lên lịch hẹn khách hàng, nhắc nhở tự động, đồng bộ lịch</td></tr>
+</table>
+
+<!-- ================================================================ -->
+<!-- 12. MODULE GIAO HÀNG                                              -->
+<!-- ================================================================ -->
+<h1 id="sec12">12. MODULE GIAO HÀNG</h1>
+
+<table>
+    <tr><th>Chức năng</th><th>Mô tả</th></tr>
+    <tr><td><b>Phiếu giao hàng</b></td><td>Tạo phiếu giao hàng từ đơn hàng đã duyệt, ghi nhận người giao, người nhận, thời gian</td></tr>
+    <tr><td><b>Phiếu nhập kho</b></td><td>Nhập lại hàng hoàn trả từ khách hàng</td></tr>
+    <tr><td><b>Phiếu vận chuyển</b></td><td>Quản lý đơn vị vận chuyển, mã vận đơn, theo dõi trạng thái giao hàng</td></tr>
+</table>
+
+<!-- ================================================================ -->
+<!-- 13. MODULE BÁO CÁO                                               -->
+<!-- ================================================================ -->
+<h1 id="sec13">13. MODULE BÁO CÁO & THỐNG KÊ</h1>
+
+<table>
+    <tr><th>Báo cáo</th><th>Nội dung</th><th>Biểu đồ</th></tr>
+    <tr><td><b>Bán hàng</b></td><td>Doanh số theo nhân viên, theo thời gian, theo sản phẩm, theo khách hàng</td><td>Bar + Line</td></tr>
+    <tr><td><b>Doanh thu</b></td><td>Doanh thu - chi phí - lợi nhuận theo tháng/quý/năm</td><td>Bar + Area</td></tr>
+    <tr><td><b>Tồn kho</b></td><td>Tồn kho theo SP, theo kho. SP bán chạy, SP tồn lâu</td><td>Bar + Pie</td></tr>
+    <tr><td><b>Kỹ thuật</b></td><td>Số lượng công việc theo KTV, theo loại, thời gian xử lý trung bình</td><td>Bar + Donut</td></tr>
+    <tr><td><b>Khách hàng</b></td><td>KH mới theo thời gian, KH theo nguồn, KH theo phân loại, Top KH</td><td>Line + Pie</td></tr>
+</table>
+
+<p><b>Định dạng xuất:</b> Excel (.xlsx), PDF, In trực tiếp</p>
+
+<!-- ================================================================ -->
+<!-- 14. HỆ THỐNG THÔNG BÁO                                           -->
+<!-- ================================================================ -->
+<h1 id="sec14">14. HỆ THỐNG THÔNG BÁO & ÂM THANH</h1>
+
+<div class="success-box">
+    <b>&#128276; Tính năng thông báo thời gian thực</b> - Đảm bảo nhân viên không bỏ lỡ đơn hàng mới dù đang làm việc trên tab khác.
+</div>
+
+<h2>14.1 Các loại thông báo</h2>
+<table>
+    <tr>
+        <th>Sự kiện</th>
+        <th>Âm thanh</th>
+        <th>Toast Pop-up</th>
+        <th>Push Browser</th>
+        <th>Badge</th>
+        <th>Email/SMS</th>
+    </tr>
+    <tr>
+        <td><b>Đơn hàng mới</b></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="badge badge-yellow">GĐ2</span></td>
+    </tr>
+    <tr>
+        <td><b>Đơn đã duyệt</b></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="badge badge-yellow">GĐ2</span></td>
+    </tr>
+    <tr>
+        <td><b>Đơn bị từ chối</b></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="badge badge-yellow">GĐ2</span></td>
+    </tr>
+    <tr>
+        <td><b>Cảnh báo tồn kho</b></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="badge badge-yellow">GĐ2</span></td>
+    </tr>
+    <tr>
+        <td><b>Lịch bảo trì</b></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="badge badge-yellow">GĐ2</span></td>
+    </tr>
+    <tr>
+        <td><b>Case mới từ CSKH</b></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="badge badge-yellow">GĐ2</span></td>
+    </tr>
+</table>
+
+<h2>14.2 Cơ chế hoạt động âm thanh</h2>
+<ol>
+    <li><b>Web Audio API:</b> Tạo 3 tiếng beep với tần số 800Hz &rarr; 1000Hz &rarr; 1200Hz (tổng ~0.6 giây)</li>
+    <li><b>File MP3 (tùy chỉnh):</b> Có thể thay thế bằng file âm thanh riêng (1-2 giây)</li>
+    <li><b>Tự động phát:</b> Khi có đơn hàng mới, hệ thống tự phát âm thanh không cần tương tác</li>
+    <li><b>Bật/Tắt:</b> Người dùng có thể tắt âm thanh trong phần Cài đặt thông báo</li>
+</ol>
+
+<!-- ================================================================ -->
+<!-- 15. PHÂN QUYỀN NGƯỜI DÙNG                                        -->
+<!-- ================================================================ -->
+<h1 id="sec15">15. PHÂN QUYỀN NGƯỜI DÙNG</h1>
+
+<table>
+    <tr>
+        <th>Vai trò</th>
+        <th>Dashboard</th>
+        <th>Xem đơn</th>
+        <th>Tạo đơn</th>
+        <th>Duyệt đơn</th>
+        <th>QL Kho</th>
+        <th>Kỹ thuật</th>
+        <th>Cấu hình</th>
+    </tr>
+    <tr>
+        <td><b>Admin</b></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+    </tr>
+    <tr>
+        <td><b>Quản lý</b></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+    </tr>
+    <tr>
+        <td><b>NV Bán hàng</b></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+    </tr>
+    <tr>
+        <td><b>Kỹ thuật viên</b></td>
+        <td style="text-align:center">Giới hạn</td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+    </tr>
+    <tr>
+        <td><b>Kế toán</b></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+    </tr>
+    <tr>
+        <td><b>Thủ kho</b></td>
+        <td style="text-align:center">Giới hạn</td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="check">&#10003;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+        <td style="text-align:center"><span class="cross">&#10007;</span></td>
+    </tr>
+</table>
+
+<!-- ================================================================ -->
+<!-- 16. YÊU CẦU KỸ THUẬT                                             -->
+<!-- ================================================================ -->
+<h1 id="sec16">16. YÊU CẦU KỸ THUẬT</h1>
+
+<h2>16.1 Frontend (Giao diện)</h2>
+<table>
+    <tr><th>Thành phần</th><th>Hiện tại (GĐ1)</th><th>Nâng cấp (GĐ2+)</th></tr>
+    <tr><td>Ngôn ngữ</td><td>HTML5, CSS3, JavaScript ES6+</td><td>TypeScript</td></tr>
+    <tr><td>UI Framework</td><td>Bootstrap 5.3</td><td>Vue.js + Vuetify / React + Ant Design</td></tr>
+    <tr><td>Biểu đồ</td><td>Chart.js</td><td>Chart.js / ECharts</td></tr>
+    <tr><td>Icons</td><td>Bootstrap Icons</td><td>Bootstrap Icons / Material Icons</td></tr>
+    <tr><td>Font</td><td>Inter (Google Fonts)</td><td>Inter / Be Vietnam Pro</td></tr>
+</table>
+
+<h2>16.2 Backend (Server)</h2>
+<table>
+    <tr><th>Thành phần</th><th>Đề xuất phương án A</th><th>Đề xuất phương án B</th></tr>
+    <tr><td>Ngôn ngữ</td><td>PHP 8.x</td><td>Node.js 18+</td></tr>
+    <tr><td>Framework</td><td>Laravel 10+</td><td>Express.js / NestJS</td></tr>
+    <tr><td>Database</td><td>MySQL 8</td><td>PostgreSQL 15</td></tr>
+    <tr><td>API</td><td>RESTful + Sanctum Auth</td><td>RESTful + JWT</td></tr>
+    <tr><td>Realtime</td><td>Laravel Echo + Pusher</td><td>Socket.io</td></tr>
+    <tr><td>File Storage</td><td>Local / S3</td><td>Local / S3</td></tr>
+</table>
+
+<h2>16.3 Hosting & Deploy</h2>
+<table>
+    <tr><th>Thành phần</th><th>Đề xuất</th></tr>
+    <tr><td>Server</td><td>VPS (2-4 CPU, 4-8GB RAM, 50-100GB SSD)</td></tr>
+    <tr><td>Hệ điều hành</td><td>Ubuntu 22.04 LTS</td></tr>
+    <tr><td>Web Server</td><td>Nginx</td></tr>
+    <tr><td>SSL</td><td>Let's Encrypt (miễn phí)</td></tr>
+    <tr><td>Backup</td><td>Tự động hàng ngày</td></tr>
+    <tr><td>Domain</td><td>Theo yêu cầu khách hàng</td></tr>
+</table>
+
+<!-- ================================================================ -->
+<!-- 17. LỘ TRÌNH PHÁT TRIỂN                                          -->
+<!-- ================================================================ -->
+<h1 id="sec17">17. LỘ TRÌNH PHÁT TRIỂN</h1>
+
+<table>
+    <tr><th style="width:12%">Giai đoạn</th><th style="width:22%">Tên</th><th>Nội dung</th><th style="width:15%">Thời gian ước</th><th style="width:10%">Trạng thái</th></tr>
+    <tr>
+        <td><b>GĐ 1</b></td>
+        <td>Template & Prototype</td>
+        <td>Thiết kế giao diện HTML/CSS, sidebar navigation, dashboard, form đơn hàng, hệ thống thông báo demo, responsive</td>
+        <td>1-2 tuần</td>
+        <td><span class="badge badge-green">&#10003; Xong</span></td>
+    </tr>
+    <tr>
+        <td><b>GĐ 2</b></td>
+        <td>Backend & Database</td>
+        <td>Thiết kế CSDL, API backend, authentication, CRUD modules (KH, SP, Thiết bị, Đơn hàng, Kho)</td>
+        <td>4-6 tuần</td>
+        <td><span class="badge badge-yellow">Kế hoạch</span></td>
+    </tr>
+    <tr>
+        <td><b>GĐ 3</b></td>
+        <td>Tính năng nâng cao</td>
+        <td>Realtime notifications (WebSocket), báo cáo nâng cao, export Excel/PDF, import dữ liệu, email/SMS</td>
+        <td>3-4 tuần</td>
+        <td><span class="badge badge-yellow">Kế hoạch</span></td>
+    </tr>
+    <tr>
+        <td><b>GĐ 4</b></td>
+        <td>Mobile App (PWA)</td>
+        <td>Progressive Web App, push notification mobile, offline mode, tối ưu UX mobile</td>
+        <td>2-3 tuần</td>
+        <td><span class="badge badge-yellow">Kế hoạch</span></td>
+    </tr>
+</table>
+
+<!-- ================================================================ -->
+<!-- 18. DANH SÁCH CẦN XÁC NHẬN                                      -->
+<!-- ================================================================ -->
+<h1 id="sec18">18. DANH SÁCH CẦN XÁC NHẬN TỪ KHÁCH HÀNG</h1>
+
+<div class="danger-box">
+    <b>&#9888; QUAN TRỌNG:</b> Vui lòng xác nhận/bổ sung các thông tin dưới đây trước khi tiến hành phát triển Giai đoạn 2.
+</div>
+
+<table>
+    <tr><th style="width:5%">STT</th><th style="width:35%">Câu hỏi</th><th style="width:40%">Mô tả</th><th style="width:20%">Trả lời</th></tr>
+    <tr><td>1</td><td><b>Logo doanh nghiệp</b></td><td>File logo vector (.svg) hoặc PNG chất lượng cao</td><td style="background:#fff3cd;"></td></tr>
+    <tr><td>2</td><td><b>Bảng màu thương hiệu</b></td><td>Có muốn thay đổi bảng màu mặc định (xanh dương #2563eb)?</td><td style="background:#fff3cd;"></td></tr>
+    <tr><td>3</td><td><b>Danh sách loại sản phẩm/dịch vụ</b></td><td>Liệt kê chi tiết các loại SP và dịch vụ kinh doanh</td><td style="background:#fff3cd;"></td></tr>
+    <tr><td>4</td><td><b>Quy trình duyệt đơn hàng</b></td><td>Ai duyệt? Bao nhiêu cấp duyệt? Có cần duyệt theo giá trị đơn hàng?</td><td style="background:#fff3cd;"></td></tr>
+    <tr><td>5</td><td><b>Danh sách kho hàng</b></td><td>Bao nhiêu kho? Địa điểm? Kho chính/kho phụ?</td><td style="background:#fff3cd;"></td></tr>
+    <tr><td>6</td><td><b>Phân quyền chi tiết</b></td><td>Các vai trò ngoài bảng phân quyền mẫu? Quyền đặc biệt?</td><td style="background:#fff3cd;"></td></tr>
+    <tr><td>7</td><td><b>Tích hợp bên thứ 3</b></td><td>Kế toán (MISA, SAP)? Email? SMS (Viettel, FPT)? Thanh toán?</td><td style="background:#fff3cd;"></td></tr>
+    <tr><td>8</td><td><b>Hosting & Domain</b></td><td>Đã có VPS/hosting chưa? Domain mong muốn?</td><td style="background:#fff3cd;"></td></tr>
+    <tr><td>9</td><td><b>Số lượng người dùng</b></td><td>Bao nhiêu tài khoản nhân viên dự kiến sử dụng?</td><td style="background:#fff3cd;"></td></tr>
+    <tr><td>10</td><td><b>Dữ liệu hiện có</b></td><td>Có dữ liệu cũ cần import? (KH, SP từ Excel, hệ thống cũ?)</td><td style="background:#fff3cd;"></td></tr>
+    <tr><td>11</td><td><b>Ngân sách dự kiến</b></td><td>Ngân sách dành cho dự án</td><td style="background:#fff3cd;"></td></tr>
+    <tr><td>12</td><td><b>Thời gian mong muốn</b></td><td>Deadline hoàn thành dự kiến</td><td style="background:#fff3cd;"></td></tr>
+</table>
+
+<br>
+<div class="highlight-box">
+    <b>&#128221; Hướng dẫn:</b> Khách hàng vui lòng điền vào cột "Trả lời" hoặc ghi chú trực tiếp vào tài liệu, sau đó gửi lại để tiến hành Giai đoạn 2.
+</div>
+
+<!-- ================================================================ -->
+<!-- FOOTER                                                            -->
+<!-- ================================================================ -->
+<br><br>
+<div class="footer">
+    <p><b>TÀI LIỆU DỰ ÁN - HỆ THỐNG QUẢN LÝ DOANH NGHIỆP QUANGLOI</b></p>
+    <p>Phiên bản 1.0 &bull; Ngày tạo: 06/09/2026</p>
+    <p>&copy; 2026 QUANGLOI Development Team. All rights reserved.</p>
+</div>
+
+</body>
+</html>

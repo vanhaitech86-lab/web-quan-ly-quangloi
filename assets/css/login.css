@@ -1,0 +1,313 @@
+/* ============================================================== */
+/* Login Page Styles                                                */
+/* ============================================================== */
+
+body.login-page {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #1e3a5f 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated Background */
+body.login-page::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+    top: -100px;
+    right: -100px;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+body.login-page::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.1) 0%, transparent 70%);
+    bottom: -100px;
+    left: -100px;
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(30px, -30px); }
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    width: 900px;
+    max-width: 95vw;
+    min-height: 550px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+/* Left Panel - Brand */
+.login-brand {
+    flex: 1;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-brand::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+}
+
+.login-brand::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    bottom: -30px;
+    left: -30px;
+}
+
+.login-brand .brand-logo {
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.login-brand .brand-logo i {
+    font-size: 2.5rem;
+}
+
+.login-brand h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.login-brand p {
+    font-size: 14px;
+    opacity: 0.85;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+.login-brand .features-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+.login-brand .features-list li {
+    padding: 6px 0;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-brand .features-list li i {
+    color: #86efac;
+}
+
+/* Right Panel - Form */
+.login-form-panel {
+    flex: 1;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form-panel h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.login-form-panel .login-subtitle {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form .form-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.login-form .input-group {
+    position: relative;
+}
+
+.login-form .input-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    z-index: 2;
+}
+
+.login-form .form-control {
+    padding: 12px 14px 12px 42px;
+    border-radius: 10px;
+    border: 1.5px solid #e2e8f0;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.login-form .form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.login-form .password-toggle {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.login-form .password-toggle:hover {
+    color: #2563eb;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.login-options .form-check-label {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.login-options .forgot-link {
+    font-size: 13px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.login-options .forgot-link:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-login:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.login-footer p {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.lang-switch {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.lang-switch a {
+    font-size: 12px;
+    color: #64748b;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.lang-switch a:hover, .lang-switch a.active {
+    color: #2563eb;
+}
+
+/* ============================================================== */
+/* Responsive Login                                                 */
+/* ============================================================== */
+@media (max-width: 768px) {
+    .login-brand {
+        display: none;
+    }
+    
+    .login-container {
+        border-radius: 16px;
+    }
+    
+    .login-form-panel {
+        padding: 32px 24px;
+    }
+}
