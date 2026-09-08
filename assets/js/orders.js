@@ -429,7 +429,7 @@ class OrderManager {
                         table.insertBefore(newRow, table.firstChild);
                     }
 
-                    bootstrap.Modal.getInstance(custModal)?.hide();
+                    bootstrap.Modal.getOrCreateInstance(custModal).hide();
                     this.showAlert('success', `Đã thêm khách hàng: ${name}`);
                 });
             }
@@ -463,7 +463,7 @@ class OrderManager {
                         table.insertBefore(newRow, table.firstChild);
                     }
 
-                    bootstrap.Modal.getInstance(equipModal)?.hide();
+                    bootstrap.Modal.getOrCreateInstance(equipModal).hide();
                     this.showAlert('success', `Đã thêm thiết bị: ${name}`);
                 });
             }
@@ -498,7 +498,7 @@ class OrderManager {
                         table.insertBefore(newRow, table.firstChild);
                     }
 
-                    bootstrap.Modal.getInstance(prodModal)?.hide();
+                    bootstrap.Modal.getOrCreateInstance(prodModal).hide();
                     this.showAlert('success', `Đã thêm sản phẩm: ${name}`);
                 });
             }

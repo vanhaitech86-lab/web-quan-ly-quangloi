@@ -271,7 +271,7 @@ function createDynamicPageSection(pageName) {
                     <p class="page-subtitle">${meta.subtitle}</p>
                 </div>
                 <div class="page-title-right">
-                    <button class="btn btn-primary" onclick="alert('Đã lưu cấu hình hệ thống!')">
+                    <button class="btn btn-primary" onclick="if(window.orderManager){window.orderManager.showAlert('success', 'Đã lưu cấu hình hệ thống thành công!');}else{alert('Đã lưu cấu hình!');}">
                         <i class="bi bi-save"></i> ${meta.btnText}
                     </button>
                 </div>
@@ -357,7 +357,7 @@ function createDynamicPageSection(pageName) {
                     <p class="page-subtitle">${meta.subtitle}</p>
                 </div>
                 <div class="page-title-right">
-                    <button class="btn btn-primary" onclick="alert('Mở form: ${meta.btnText}')">
+                    <button class="btn btn-primary" onclick="if(window.openFormModal){window.openFormModal('${pageName}');}else{alert('Mở form nhập liệu');}">
                         <i class="bi bi-plus-circle"></i> ${meta.btnText}
                     </button>
                 </div>
