@@ -91,11 +91,6 @@
             border-left: 4px solid #2563eb;
             padding-left: 10px;
         }
-        h3 {
-            font-size: 13.5pt;
-            color: #334155;
-            margin-top: 16px;
-        }
         
         table {
             border-collapse: collapse;
@@ -154,14 +149,6 @@
             margin: 14px 0;
             border-radius: 4px;
         }
-        .warning-box {
-            background: #fffbeb;
-            border: 1px solid #fde68a;
-            border-left: 4px solid #f59e0b;
-            padding: 12px 16px;
-            margin: 14px 0;
-            border-radius: 4px;
-        }
         
         .sign-table {
             border: none !important;
@@ -187,16 +174,16 @@
     <div class="cover-subtitle">DỰ ÁN XÂY DỰNG HỆ THỐNG QUẢN LÝ DOANH NGHIỆP QUANGLOI</div>
     <div class="cover-divider"></div>
     <p style="font-size:13.5pt; color:#64748b; font-style:italic;">
-        (Quản lý Khách hàng &bull; Thiết bị &bull; Đơn hàng &bull; Kho hàng &bull; Kỹ thuật &bull; Thông báo thời gian thực)
+        (Quản lý Khách hàng &bull; Thiết bị &bull; Đơn hàng &bull; Kho hàng &bull; Kỹ thuật &bull; Chuông thông báo Realtime)
     </p>
 
     <div class="cover-info">
         <table>
-            <tr><td>Kính gửi:</td><td><b>QUÝ KHÁCH HÀNG / DOANH NGHIỆP</b></td></tr>
+            <tr><td>Kính gửi:</td><td><b>QUÝ KHÁCH HÀNG / QUÝ DOANH NGHIỆP</b></td></tr>
             <tr><td>Đơn vị thực hiện:</td><td><b>QUANGLOI TECH SOLUTIONS</b></td></tr>
             <tr><td>Ngày lập báo giá:</td><td>11/09/2026</td></tr>
             <tr><td>Hiệu lực báo giá:</td><td>30 ngày kể từ ngày lập</td></tr>
-            <tr><td>Website Demo:</td><td><a href="https://web-quan-ly-quangloi.vercel.app">https://web-quan-ly-quangloi.vercel.app</a></td></tr>
+            <tr><td>Website Demo trực tiếp:</td><td><a href="https://web-quan-ly-quangloi.vercel.app">https://web-quan-ly-quangloi.vercel.app</a></td></tr>
         </table>
     </div>
 </div>
@@ -204,94 +191,92 @@
 <!-- ================================================================ -->
 <!-- 1. TỔNG HỢP CÁC GÓI GIẢI PHÁP                                   -->
 <!-- ================================================================ -->
-<h1>1. TỔNG HỢP CÁC GÓI GIẢI PHÁP ĐỀ XUẤT</h1>
+<h1>1. TỔNG HỢP 3 GÓI GIẢI PHÁP (10 TRIỆU - 20 TRIỆU - 30 TRIỆU)</h1>
 
-<p>Căn cứ theo yêu cầu vận hành thực tế của doanh nghiệp, chúng tôi kính gửi 3 phương án gói giải pháp từ cơ bản đến nâng cao để Quý khách hàng thuận tiện lựa chọn theo ngân sách và quy mô hoạt động:</p>
+<p>Theo định hướng ngân sách của Quý Doanh nghiệp, chúng tôi đã chuẩn hóa bảng giá thành 3 gói giải pháp rõ ràng, minh bạch với mức giá lần lượt là <b>10.000.000 ₫</b>, <b>20.000.000 ₫</b> và <b>30.000.000 ₫</b>:</p>
 
 <table>
     <thead>
         <tr>
-            <th style="width:22%">Gói Giải Pháp</th>
-            <th style="width:48%">Phạm Vi Tính Năng Cốt Lõi</th>
-            <th style="width:15%">Thời Gian</th>
-            <th style="width:15%">Chi Phí Trọn Gói</th>
+            <th style="width:20%">Gói Giải Pháp</th>
+            <th style="width:50%">Phạm Vi Tính Năng & Quyền Lợi</th>
+            <th style="width:14%">Thời Gian</th>
+            <th style="width:16%">Chi Phí Trọn Gói</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>
-                <b>GÓI 1: TIÊU CHUẨN</b><br>
-                <small style="color:#64748b;">(Standard Web)</small>
+                <b>GÓI 1: CƠ BẢN</b><br>
+                <small style="color:#64748b;">(Khởi động số hóa)</small>
             </td>
             <td>
                 &bull; Giao diện Web quản trị Responsive chuẩn PC & Mobile<br>
-                &bull; Dashboard thống kê doanh thu, đơn hàng & tồn kho<br>
-                &bull; Quản lý Khách hàng, Sản phẩm, Báo giá & Đơn hàng<br>
+                &bull; Dashboard thống kê tổng quan (Doanh thu, đơn hàng, tồn kho)<br>
+                &bull; Quản lý Khách hàng, Sản phẩm, Báo giá & Đơn hàng cơ bản<br>
                 &bull; Quản lý Kho hàng cơ bản (Nhập / Xuất / Tồn kho)<br>
-                &bull; Cơ sở dữ liệu máy chủ & phân quyền người dùng cơ bản<br>
-                &bull; Xuất báo cáo danh sách dữ liệu ra Excel
+                &bull; Phân quyền người dùng quản trị cơ bản (Admin, Nhân viên)<br>
+                &bull; Xuất dữ liệu danh sách đơn hàng & kho ra file Excel
             </td>
-            <td style="text-align:center">3 - 4 tuần</td>
-            <td class="price-text">28.500.000 ₫</td>
+            <td style="text-align:center">2 - 3 tuần</td>
+            <td class="price-text" style="font-size:12pt;">10.000.000 ₫</td>
         </tr>
         <tr style="background:#f0fdf4;">
             <td>
                 <b style="color:#15803d">GÓI 2: CHUYÊN NGHIỆP</b><br>
                 <span class="badge badge-recommended">&#9733; KHUYÊN DÙNG</span><br>
-                <small style="color:#64748b;">(Full Web + Realtime Alert)</small>
+                <small style="color:#64748b;">(Quản lý toàn diện)</small>
             </td>
             <td>
                 <b>Bao gồm toàn bộ tính năng Gói 1 và bổ sung:</b><br>
-                &bull; <b>Quy trình Tạo & Phê duyệt Đơn hàng nhiều cấp</b><br>
-                &bull; <b>Hệ thống Thông báo âm thanh Chuông tự động</b> khi có đơn mới<br>
-                &bull; <b>Quản lý Thiết bị & Bảo hành</b> (Serial, vị trí lắp, hạn bảo hành)<br>
-                &bull; <b>Điều phối Kỹ thuật:</b> Phiếu công tác KTV, Case sự cố, Task nội bộ<br>
+                &bull; <b>Quy trình Tạo & Phê duyệt Đơn hàng nhiều cấp</b> (Chờ duyệt &rarr; Đã duyệt &rarr; Đang xử lý &rarr; Hoàn thành)<br>
+                &bull; <b>Hệ thống Chuông thông báo âm thanh thời gian thực</b> tự động khi có đơn mới<br>
+                &bull; <b>Quản lý Thiết bị & Bảo hành:</b> Serial Number, hãng, vị trí lắp, cảnh báo bảo hành<br>
+                &bull; <b>Điều phối Kỹ thuật hiện trường:</b> Phiếu công tác KTV, Case sự cố, Task nội bộ (%)<br>
                 &bull; Quản lý Nhà cung cấp, Hợp đồng, Hóa đơn, Phiếu thu/chi<br>
                 &bull; <b>Ứng dụng PWA Web App</b> cài đặt nhanh trên điện thoại di động<br>
-                &bull; Tích hợp mã QR VietQR tự động khớp thanh toán
+                &bull; Tích hợp tạo mã QR VietQR thanh toán nhanh theo từng đơn
             </td>
-            <td style="text-align:center">5 - 6 tuần</td>
-            <td class="price-text" style="color:#15803d; font-size:12pt;">48.000.000 ₫</td>
+            <td style="text-align:center">3 - 4 tuần</td>
+            <td class="price-text" style="color:#15803d; font-size:13pt;">20.000.000 ₫</td>
         </tr>
         <tr>
             <td>
                 <b>GÓI 3: CAO CẤP</b><br>
-                <small style="color:#64748b;">(Enterprise + Native App)</small>
+                <small style="color:#64748b;">(Tự động hóa & Đa kênh)</small>
             </td>
             <td>
                 <b>Bao gồm toàn bộ tính năng Gói 2 và bổ sung:</b><br>
-                &bull; <b>Ứng dụng di động chuyên biệt (Native App iOS & Android)</b><br>
-                &bull; KTV nhận việc, điểm danh, chụp ảnh hiện trường qua Mobile App<br>
-                &bull; Tích hợp cổng gửi tin nhắn tự động <b>Zalo ZNS / SMS Brandname</b><br>
-                &bull; Tích hợp kết nối phần mềm kế toán (MISA SME / Fast)<br>
+                &bull; <b>Tự động gửi tin nhắn Zalo ZNS / SMS Brandname</b> cho khách (báo đơn, xuất kho, bảo trì)<br>
+                &bull; <b>Tích hợp cổng thanh toán VietQR Pro:</b> Quét mã tự động khớp tiền và tự duyệt đơn<br>
+                &bull; <b>Báo cáo tài chính & thống kê chuyên sâu:</b> Doanh số theo KTV, sản phẩm bán chạy, lợi nhuận<br>
+                &bull; Tính năng quản lý tiến độ thi công công trình lớn & phân quyền chuyên sâu đa chi nhánh<br>
                 &bull; Cấu hình máy chủ chịu tải cao, sao lưu dữ liệu tự động Realtime<br>
-                &bull; Hỗ trợ kỹ thuật ưu tiên 24/7 & Nâng cấp tính năng định kỳ
+                &bull; Hỗ trợ kỹ thuật ưu tiên 24/7 trong suốt thời gian bảo hành
             </td>
-            <td style="text-align:center">7 - 9 tuần</td>
-            <td class="price-text">88.000.000 ₫</td>
+            <td style="text-align:center">4 - 6 tuần</td>
+            <td class="price-text" style="font-size:12pt;">30.000.000 ₫</td>
         </tr>
     </tbody>
 </table>
 
 <div class="callout-box">
-    <b>&#128161; Khuyến nghị:</b> Đối với mô hình quản lý của QUANGLOI (vừa bán hàng thiết bị, vừa quản lý kho và điều phối đội ngũ kỹ thuật viên đi lắp đặt), <b>GÓI 2: CHUYÊN NGHIỆP</b> là lựa chọn tối ưu nhất về cả tính năng thực chiến và ngân sách đầu tư ban đầu.
+    <b>&#128161; Khuyến nghị:</b> <b>GÓI 2 (20.000.000 ₫)</b> là phương án phù hợp nhất cho QUANGLOI ở thời điểm hiện tại: vừa có đầy đủ quy trình bán hàng, duyệt đơn, chuông thông báo âm thanh, quản lý kho lẫn điều phối đội ngũ thợ kỹ thuật công trình với chi phí rất hợp lý.
 </div>
 
 <!-- ================================================================ -->
 <!-- 2. BẢNG BÓC TÁCH CHI TIẾT TỪNG HẠNG MỤC                         -->
 <!-- ================================================================ -->
-<h1>2. BẢNG BÓC TÁCH CHI TIẾT CHI PHÍ TỪNG HẠNG MỤC (GÓI CHUYÊN NGHIỆP)</h1>
-
-<p>Dưới đây là bảng phân tích chi tiết các khối lượng công việc kỹ thuật, nhân sự lập trình và đơn giá tương ứng:</p>
+<h1>2. BẢNG BÓC TÁCH CHI TIẾT HẠNG MỤC (GÓI 2: CHUYÊN NGHIỆP - 20 TRIỆU)</h1>
 
 <table>
     <thead>
         <tr>
             <th style="width:6%">STT</th>
             <th style="width:38%">Hạng Mục Công Việc / Phân Hệ</th>
-            <th style="width:30%">Mô Tả Kỹ Thuật Chi Tiết</th>
+            <th style="width:32%">Nội Dung Triển Khai</th>
             <th style="width:10%">Thời Gian</th>
-            <th style="width:16%">Thành Tiền (VNĐ)</th>
+            <th style="width:14%">Thành Tiền</th>
         </tr>
     </thead>
     <tbody>
@@ -299,292 +284,222 @@
         <tr style="background:#f1f5f9;"><td colspan="5"><b>PHẦN I: THIẾT KẾ GIAO DIỆN & TRẢI NGHIỆM NGƯỜI DÙNG (FRONTEND UI/UX)</b></td></tr>
         <tr>
             <td style="text-align:center">1.1</td>
-            <td><b>Trang chủ Dashboard & Trung tâm điều hành</b></td>
-            <td>8 Thẻ KPI tổng quan (Doanh thu, Đơn hàng, Thiết bị, Lịch hẹn...), 2 Biểu đồ doanh thu 12 tháng & trạng thái đơn hàng (Chart.js), bảng theo dõi đơn gần đây, timeline hoạt động.</td>
-            <td style="text-align:center">3 ngày</td>
-            <td class="price-text">4.500.000 ₫</td>
+            <td><b>Dashboard Trung tâm & Thống kê KPI</b></td>
+            <td>8 Thẻ KPI tổng quan, 2 biểu đồ doanh thu & trạng thái đơn hàng (Chart.js), theo dõi đơn hàng gần đây.</td>
+            <td style="text-align:center">2 ngày</td>
+            <td class="price-text">1.500.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center">1.2</td>
-            <td><b>Phân hệ Quản lý Đơn hàng & Luồng Duyệt đơn</b></td>
-            <td>Giao diện danh sách đơn hàng, modal form tạo đơn tính chiết khấu/VAT tự động theo thời gian thực, nút duyệt đơn nhanh, popup modal duyệt đơn, cập nhật trạng thái tức thì.</td>
-            <td style="text-align:center">4 ngày</td>
-            <td class="price-text">6.000.000 ₫</td>
+            <td><b>Quản lý Đơn hàng & Luồng Phê duyệt đơn</b></td>
+            <td>Form tạo đơn tự động tính chiết khấu/VAT theo thời gian thực, nút duyệt đơn nhanh, popup modal duyệt đơn.</td>
+            <td style="text-align:center">3 ngày</td>
+            <td class="price-text">2.500.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center">1.3</td>
-            <td><b>Hệ thống Thông báo Thời Gian Thực & Âm Thanh</b></td>
-            <td>Âm thanh chuông chime đa âm sắc khi có đơn mới (Web Audio API fallback), pop-up Toast notification góc màn hình, huy hiệu Badge Counter trên thanh điều hướng & icon chuông.</td>
+            <td><b>Chuông Thông Báo Âm Thanh & Realtime Alert</b></td>
+            <td>Phát âm thanh chuông chime khi có đơn mới (Web Audio API fallback), pop-up Toast, Badge Counter.</td>
             <td style="text-align:center">2 ngày</td>
-            <td class="price-text">3.500.000 ₫</td>
+            <td class="price-text">1.500.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center">1.4</td>
-            <td><b>Phân hệ Quản lý Khách hàng & Công ty</b></td>
-            <td>Danh sách khách hàng, phân loại VIP/Thường/Tiềm năng, thông tin người liên hệ, công ty doanh nghiệp, lịch sử mua hàng, modal form nhập liệu CRUD đầy đủ.</td>
-            <td style="text-align:center">2.5 ngày</td>
-            <td class="price-text">3.500.000 ₫</td>
+            <td><b>Quản lý Khách hàng & Doanh nghiệp</b></td>
+            <td>Danh sách khách hàng, phân loại VIP/Thường, người liên hệ, công ty, lịch sử giao dịch, form CRUD.</td>
+            <td style="text-align:center">1.5 ngày</td>
+            <td class="price-text">1.000.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center">1.5</td>
-            <td><b>Phân hệ Quản lý Thiết bị & Bảo hành</b></td>
-            <td>Theo dõi thiết bị theo Serial Number, nhà sản xuất (Hikvision, Dahua...), vị trí lắp đặt thực tế, thời hạn bảo hành, trạng thái hoạt động/hỏng hóc, cảnh báo hết bảo hành.</td>
-            <td style="text-align:center">2.5 ngày</td>
-            <td class="price-text">3.500.000 ₫</td>
+            <td><b>Quản lý Thiết bị & Lịch Bảo hành</b></td>
+            <td>Quản lý Serial Number thiết bị, hãng sản xuất, địa điểm lắp đặt, cảnh báo thời hạn bảo hành.</td>
+            <td style="text-align:center">1.5 ngày</td>
+            <td class="price-text">1.000.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center">1.6</td>
-            <td><b>Phân hệ Quản lý Kho hàng & Luân chuyển</b></td>
-            <td>Bảng tồn kho chi tiết (Tồn đầu, Nhập, Xuất, Tồn cuối), phiếu nhập kho, phiếu xuất kho, chuyển kho, cảnh báo vật tư sắp hết hoặc hết hàng.</td>
-            <td style="text-align:center">3.5 ngày</td>
-            <td class="price-text">5.000.000 ₫</td>
-        </tr>
-        <tr>
-            <td style="text-align:center">1.7</td>
-            <td><b>Phân hệ Quản lý Kỹ thuật & Điều phối</b></td>
-            <td>Phiếu công tác KTV hiện trường, tiếp nhận & xử lý Case sự cố, phân công Task công việc nội bộ có thanh tiến độ %, phiếu khảo sát lắp đặt, ứng/nhận vật tư.</td>
-            <td style="text-align:center">4 ngày</td>
-            <td class="price-text">5.500.000 ₫</td>
-        </tr>
-        <tr>
-            <td style="text-align:center">1.8</td>
-            <td><b>Các Phân hệ Bổ trợ & Danh mục chung</b></td>
-            <td>Báo giá, Hợp đồng, Hóa đơn, Giao hàng, Phiếu thu/chi, Lịch hẹn đối tác, Nhà cung cấp, Bảng giá, Dòng sản phẩm & Combo.</td>
-            <td style="text-align:center">3 ngày</td>
-            <td class="price-text">4.500.000 ₫</td>
+            <td><b>Quản lý Kho hàng & Cảnh báo tồn kho</b></td>
+            <td>Bảng luân chuyển kho (Tồn đầu, Nhập, Xuất, Tồn cuối), phiếu nhập, phiếu xuất, cảnh báo vật tư sắp hết.</td>
+            <td style="text-align:center">2 ngày</td>
+            <td class="price-text">2.000.000 ₫</td>
         </tr>
 
         <!-- PHẦN II -->
         <tr style="background:#f1f5f9;"><td colspan="5"><b>PHẦN II: LẬP TRÌNH HỆ THỐNG MÁY CHỦ & CƠ SỞ DỮ LIỆU (BACKEND & DATABASE)</b></td></tr>
         <tr>
             <td style="text-align:center">2.1</td>
-            <td><b>Thiết kế & Tối ưu Cơ sở dữ liệu quan hệ</b></td>
-            <td>Xây dựng kiến trúc CSDL quan hệ chuẩn 3NF (PostgreSQL/MySQL), lập chỉ mục (Indexes) tăng tốc độ tìm kiếm hàng trăm nghìn bản ghi, cấu hình cơ chế sao lưu tự động.</td>
-            <td style="text-align:center">3 ngày</td>
-            <td class="price-text">4.000.000 ₫</td>
+            <td><b>Điều phối Kỹ thuật & Phiếu công tác KTV</b></td>
+            <td>Phiếu công tác hiện trường, tiếp nhận Case sự cố, phân công Task nội bộ có thanh tiến độ %, vật tư.</td>
+            <td style="text-align:center">2 ngày</td>
+            <td class="price-text">2.000.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center">2.2</td>
-            <td><b>Xây dựng hệ thống Backend RESTful API</b></td>
-            <td>Lập trình API xử lý nghiệp vụ cho toàn bộ các phân hệ (CRUD đơn hàng, tính tiền, cập nhật kho tự động, xử lý trạng thái thiết bị và phiếu công tác kỹ thuật).</td>
-            <td style="text-align:center">5 ngày</td>
-            <td class="price-text">7.000.000 ₫</td>
+            <td><b>Danh mục chung & Phân hệ bổ trợ</b></td>
+            <td>Báo giá, Hợp đồng, Hóa đơn, Giao hàng, Phiếu thu/chi, Lịch hẹn, Nhà cung cấp, Bảng giá.</td>
+            <td style="text-align:center">2 ngày</td>
+            <td class="price-text">1.500.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center">2.3</td>
-            <td><b>Hệ thống Bảo mật & Phân quyền đa cấp (RBAC)</b></td>
-            <td>Xác thực người dùng an toàn bằng JWT Token/Session, mã hóa mật khẩu Bcrypt, phân quyền chi tiết cho 6 vai trò: Admin, Quản lý, Nhân viên Sale, Kỹ thuật viên, Kế toán, Thủ kho.</td>
-            <td style="text-align:center">2 ngày</td>
-            <td class="price-text">3.000.000 ₫</td>
+            <td><b>Thiết kế CSDL & Xây dựng Backend API</b></td>
+            <td>Cơ sở dữ liệu quan hệ tối ưu, hệ thống RESTful API xử lý nghiệp vụ đơn hàng, kho và kỹ thuật an toàn.</td>
+            <td style="text-align:center">3 ngày</td>
+            <td class="price-text">2.500.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center">2.4</td>
-            <td><b>Dịch vụ Realtime Notification Server</b></td>
-            <td>Cấu hình WebSocket / Server-Sent Events (SSE) để truyền tín hiệu đơn hàng mới ngay lập tức từ máy khách về máy quản lý để kích hoạt chuông và thông báo.</td>
-            <td style="text-align:center">2 ngày</td>
-            <td class="price-text">3.000.000 ₫</td>
-        </tr>
-        <tr>
-            <td style="text-align:center">2.5</td>
-            <td><b>Module Xuất & Nhập dữ liệu Excel hàng loạt</b></td>
-            <td>Tính năng xuất danh sách đơn hàng, tồn kho, khách hàng ra file Excel (.xlsx), hỗ trợ nhập dữ liệu hàng loạt từ bảng tính cũ lên hệ thống.</td>
+            <td><b>Hệ thống Bảo mật & Phân quyền đa cấp (RBAC)</b></td>
+            <td>Xác thực JWT Token, phân quyền người dùng (Admin, Quản lý, Sales, KTV, Kế toán, Thủ kho).</td>
             <td style="text-align:center">1.5 ngày</td>
-            <td class="price-text">2.000.000 ₫</td>
+            <td class="price-text">1.500.000 ₫</td>
         </tr>
 
         <!-- PHẦN III -->
         <tr style="background:#f1f5f9;"><td colspan="5"><b>PHẦN III: TRIỂN KHAI, ĐÀO TẠO & CHUYỂN GIAO</b></td></tr>
         <tr>
             <td style="text-align:center">3.1</td>
-            <td><b>Cài đặt & Cấu hình môi trường máy chủ Production</b></td>
-            <td>Triển khai mã nguồn lên Cloud VPS, cấu hình Web Server Nginx, thiết lập tường lửa bảo mật (UFW), cài đặt chứng chỉ SSL HTTPS miễn phí trọn đời.</td>
+            <td><b>Cấu hình Máy chủ Production & Bảo mật SSL</b></td>
+            <td>Triển khai mã nguồn lên Cloud Server, cấu hình Nginx, tường lửa UFW, chứng chỉ SSL HTTPS an toàn.</td>
             <td style="text-align:center">1 ngày</td>
-            <td class="price-text">1.500.000 ₫</td>
+            <td class="price-text">1.000.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center">3.2</td>
-            <td><b>Đào tạo hướng dẫn sử dụng & Chuyển giao tài liệu</b></td>
-            <td>Buổi hướng dẫn trực tiếp / online cho toàn bộ nhân viên các phòng ban, bàn giao file tài liệu Word/PDF hướng dẫn chi tiết và video thao tác mẫu.</td>
-            <td style="text-align:center">1.5 ngày</td>
-            <td class="price-text">2.000.000 ₫</td>
+            <td><b>Đào tạo hướng dẫn sử dụng & Bàn giao tài liệu</b></td>
+            <td>Hướng dẫn nhân viên sử dụng, bàn giao bộ tài liệu Word/PDF hướng dẫn chi tiết và video thao tác mẫu.</td>
+            <td style="text-align:center">1 ngày</td>
+            <td class="price-text">1.000.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center">3.3</td>
-            <td><b>Bảo hành kỹ thuật & Hỗ trợ vận hành (12 tháng)</b></td>
-            <td>Cam kết khắc phục lỗi phát sinh miễn phí 100% trong 12 tháng, tối ưu cơ sở dữ liệu định kỳ hàng quý, hỗ trợ kỹ thuật qua Hotline/Zalo phản hồi trong vòng 2h.</td>
+            <td><b>Cấu hình PWA Web App & Mã QR VietQR</b></td>
+            <td>Thiết lập ứng dụng PWA cài nhanh trên điện thoại di động, tích hợp tạo mã VietQR theo đơn hàng.</td>
+            <td style="text-align:center">1 ngày</td>
+            <td class="price-text">1.000.000 ₫</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">3.4</td>
+            <td><b>Bảo hành kỹ thuật miễn phí (12 tháng)</b></td>
+            <td>Cam kết khắc phục lỗi phần mềm miễn phí 100% trong 12 tháng, hỗ trợ phản hồi trong vòng 2h.</td>
             <td style="text-align:center">12 tháng</td>
             <td class="price-text" style="color:#15803d;">MIỄN PHÍ</td>
         </tr>
 
         <!-- TỔNG CỘNG -->
         <tr class="total-row">
-            <td colspan="4" style="text-align:right; font-size:12pt;">TỔNG CỘNG CHI PHÍ PHẦN MỀM TRỌN GÓI:</td>
-            <td class="price-text" style="font-size:13pt; color:#2563eb;">48.000.000 ₫</td>
-        </tr>
-    </tbody>
-</table>
-
-<p style="font-style:italic; font-size:11pt; color:#64748b;">* Giá trên chưa bao gồm thuế GTGT (VAT 8% hoặc 10% nếu Quý khách có nhu cầu xuất hóa đơn đỏ công ty).</p>
-
-<!-- ================================================================ -->
-<!-- 3. CHI PHÍ HẠ TẦNG & DỊCH VỤ HÀNG NĂM                            -->
-<!-- ================================================================ -->
-<h1>3. CHI PHÍ HẠ TẦNG MÁY CHỦ & DỊCH VỤ HÀNG NĂM (THAM KHẢO)</h1>
-
-<p>Đây là các chi phí dịch vụ bên thứ ba (hạ tầng lưu trữ đám mây) để hệ thống hoạt động 24/7 trên Internet. Quý khách hàng có thể tự đứng tên thanh toán trực tiếp với nhà cung cấp hoặc ủy quyền đơn vị thực hiện chi hộ:</p>
-
-<table>
-    <thead>
-        <tr>
-            <th style="width:6%">STT</th>
-            <th style="width:30%">Hạng Mục Dịch Vụ</th>
-            <th style="width:38%">Thông Số Kỹ Thuật Đề Xuất</th>
-            <th style="width:12%">Chu Kỳ</th>
-            <th style="width:14%">Chi Phí Ước Tính</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="text-align:center">1</td>
-            <td><b>Máy chủ Cloud VPS Chuyên Dụng</b></td>
-            <td>4 CPU Cores, 8GB RAM, 100GB NVMe SSD tốc độ cao, Băng thông không giới hạn, IP tĩnh riêng (Viettel IDC / VNPT Data Center).</td>
-            <td style="text-align:center">1 Năm</td>
-            <td class="price-text">3.600.000 ₫/năm</td>
-        </tr>
-        <tr>
-            <td style="text-align:center">2</td>
-            <td><b>Tên miền Doanh nghiệp (.vn / .com)</b></td>
-            <td>Ví dụ: <code>quangloi.vn</code> hoặc <code>quangloisecurity.com</code>.</td>
-            <td style="text-align:center">1 Năm</td>
-            <td class="price-text">450.000 - 750.000 ₫/năm</td>
-        </tr>
-        <tr>
-            <td style="text-align:center">3</td>
-            <td><b>Chứng chỉ bảo mật SSL (HTTPS)</b></td>
-            <td>Mã hóa dữ liệu truyền tải an toàn, đạt chuẩn trình duyệt.</td>
-            <td style="text-align:center">Trọn đời</td>
-            <td class="price-text" style="color:#15803d;">MIỄN PHÍ (Let's Encrypt)</td>
-        </tr>
-        <tr>
-            <td style="text-align:center">4</td>
-            <td><b>Sao lưu dữ liệu tự động (Cloud Backup)</b></td>
-            <td>Tự động backup toàn bộ CSDL và file đính kèm hàng ngày sang máy chủ lưu trữ độc lập chống mất mát dữ liệu.</td>
-            <td style="text-align:center">1 Năm</td>
-            <td class="price-text">1.200.000 ₫/năm</td>
-        </tr>
-        <tr class="total-row">
-            <td colspan="4" style="text-align:right;">TỔNG CHI PHÍ HẠ TẦNG DỰ KIẾN (NĂM ĐẦU TIÊN):</td>
-            <td class="price-text">~ 5.250.000 ₫/năm</td>
+            <td colspan="4" style="text-align:right; font-size:12pt;">TỔNG CỘNG CHI PHÍ PHẦN MỀM TRỌN GÓI (GÓI 2):</td>
+            <td class="price-text" style="font-size:13pt; color:#2563eb;">20.000.000 ₫</td>
         </tr>
     </tbody>
 </table>
 
 <!-- ================================================================ -->
-<!-- 4. CÁC TÙY CHỌN TÍCH HỢP MỞ RỘNG                                 -->
+<!-- 3. TIẾN ĐỘ THANH TOÁN CHO CÁC GÓI                                -->
 <!-- ================================================================ -->
-<h1>4. CÁC HẠNG MỤC TÙY CHỌN TÍCH HỢP MỞ RỘNG (OPTION THÊM NẾU CẦN)</h1>
+<h1>3. PHƯƠNG THỨC & TIẾN ĐỘ THANH TOÁN (CHIA 3 ĐỢT)</h1>
 
-<table>
-    <thead>
-        <tr>
-            <th style="width:6%">STT</th>
-            <th style="width:30%">Dịch Vụ Tích Hợp</th>
-            <th style="width:48%">Lợi Ích Thực Tế Cho Doanh Nghiệp</th>
-            <th style="width:16%">Phí Tích Hợp</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="text-align:center">1</td>
-            <td><b>Tích hợp Zalo ZNS / SMS Brandname</b></td>
-            <td>Hệ thống tự động gửi tin nhắn Zalo/SMS cho khách hàng khi: Đơn hàng đã tạo, Đơn hàng xuất kho đang giao, Thông báo lịch bảo trì thiết bị định kỳ.</td>
-            <td class="price-text">4.500.000 ₫<br><small style="color:#64748b;">(Chưa gồm phí nạp tin)</small></td>
-        </tr>
-        <tr>
-            <td style="text-align:center">2</td>
-            <td><b>Tích hợp Thanh toán Tự động VietQR Pro</b></td>
-            <td>Tự động sinh mã VietQR động theo từng đơn hàng (có sẵn nội dung chuyển khoản & số tiền chính xác). Khi khách chuyển tiền, hệ thống tự duyệt đơn và báo thành công tức thì.</td>
-            <td class="price-text">3.500.000 ₫</td>
-        </tr>
-        <tr>
-            <td style="text-align:center">3</td>
-            <td><b>Tích hợp Phần mềm Kế toán (MISA SME)</b></td>
-            <td>Đồng bộ dữ liệu khách hàng, hóa đơn bán hàng và phiếu thu chi tự động sang phần mềm kế toán MISA, giảm 90% thời gian nhập liệu trùng lặp.</td>
-            <td class="price-text">8.000.000 ₫</td>
-        </tr>
-        <tr>
-            <td style="text-align:center">4</td>
-            <td><b>Đóng gói Mobile App chuyên dụng (iOS & Android)</b></td>
-            <td>Build mã nguồn thành App cài đặt riêng tải từ App Store & Google Play cho nhân viên kinh doanh và kỹ thuật viên đi công trình.</td>
-            <td class="price-text">25.000.000 ₫</td>
-        </tr>
-    </tbody>
-</table>
+<p>Tiến độ thanh toán được chia làm 3 đợt linh hoạt theo tiến độ thực hiện thực tế:</p>
 
-<!-- ================================================================ -->
-<!-- 5. TIẾN ĐỘ TRIỂN KHAI & PHƯƠNG THỨC THANH TOÁN                   -->
-<!-- ================================================================ -->
-<h1>5. TIẾN ĐỘ TRIỂN KHAI & PHƯƠNG THỨC THANH TOÁN</h1>
-
-<h2>5.1 Lộ trình triển khai (Tổng thời gian: 5 - 6 tuần)</h2>
-<ul>
-    <li><b>Tuần 1 - 2:</b> Hoàn thiện thiết kế chi tiết giao diện UI/UX theo đúng nhận diện thương hiệu QUANGLOI, chốt luồng nghiệp vụ duyệt đơn và phân quyền.</li>
-    <li><b>Tuần 3 - 4:</b> Xây dựng hệ thống Backend API, Cơ sở dữ liệu và tích hợp thông báo chuông thời gian thực.</li>
-    <li><b>Tuần 5:</b> Chạy thử nghiệm nội bộ (UAT Testing), nạp dữ liệu danh mục thực tế của khách hàng (sản phẩm, kho, khách hàng).</li>
-    <li><b>Tuần 6:</b> Đào tạo hướng dẫn nhân viên sử dụng, bàn giao tài liệu kỹ thuật và chính thức Go-Live vận hành.</li>
-</ul>
-
-<h2>5.2 Phương thức thanh toán (Chia làm 3 đợt linh hoạt)</h2>
 <table>
     <thead>
         <tr>
             <th style="width:15%">Đợt Thanh Toán</th>
-            <th style="width:20%">Tỷ Lệ</th>
-            <th style="width:45%">Điều Kiện Kích Hoạt Thanh Toán</th>
-            <th style="width:20%">Số Tiền (Gói 2)</th>
+            <th style="width:15%">Tỷ Lệ</th>
+            <th style="width:40%">Điều Kiện Kích Hoạt Thanh Toán</th>
+            <th style="width:10%">Gói 1 (10Tr)</th>
+            <th style="width:10%">Gói 2 (20Tr)</th>
+            <th style="width:10%">Gói 3 (30Tr)</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td style="text-align:center"><b>Đợt 1</b></td>
             <td style="text-align:center"><b>40%</b></td>
-            <td>Ngay sau khi hai bên ký kết hợp đồng kinh tế và thống nhất đề cương kỹ thuật.</td>
-            <td class="price-text">19.200.000 ₫</td>
+            <td>Ngay sau khi ký hợp đồng và thống nhất đề cương kỹ thuật.</td>
+            <td class="price-text">4.000.000 ₫</td>
+            <td class="price-text" style="color:#15803d;">8.000.000 ₫</td>
+            <td class="price-text">12.000.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center"><b>Đợt 2</b></td>
             <td style="text-align:center"><b>40%</b></td>
-            <td>Sau khi hoàn thành bản phần mềm chạy thử nghiệm (UAT Demo) có đầy đủ dữ liệu mẫu và duyệt đơn.</td>
-            <td class="price-text">19.200.000 ₫</td>
+            <td>Sau khi hoàn thành bản Demo UAT chạy thử nghiệm với dữ liệu mẫu.</td>
+            <td class="price-text">4.000.000 ₫</td>
+            <td class="price-text" style="color:#15803d;">8.000.000 ₫</td>
+            <td class="price-text">12.000.000 ₫</td>
         </tr>
         <tr>
             <td style="text-align:center"><b>Đợt 3</b></td>
             <td style="text-align:center"><b>20%</b></td>
-            <td>Sau khi nghiệm thu bàn giao chính thức hệ thống, hoàn tất đào tạo và chuyển giao tài liệu hướng dẫn.</td>
-            <td class="price-text">9.600.000 ₫</td>
+            <td>Sau khi nghiệm thu bàn giao chính thức, hoàn tất đào tạo và chuyển giao.</td>
+            <td class="price-text">2.000.000 ₫</td>
+            <td class="price-text" style="color:#15803d;">4.000.000 ₫</td>
+            <td class="price-text">6.000.000 ₫</td>
         </tr>
         <tr class="total-row">
             <td colspan="3" style="text-align:right;">TỔNG CỘNG:</td>
-            <td class="price-text">48.000.000 ₫</td>
+            <td class="price-text">10.000.000 ₫</td>
+            <td class="price-text" style="color:#15803d;">20.000.000 ₫</td>
+            <td class="price-text">30.000.000 ₫</td>
         </tr>
     </tbody>
 </table>
 
 <!-- ================================================================ -->
-<!-- 6. CAM KẾT CHẤT LƯỢNG & BẢO HÀNH                                 -->
+<!-- 4. CHI PHÍ HẠ TẦNG HÀNG NĂM                                      -->
 <!-- ================================================================ -->
-<h1>6. CHÍNH SÁCH BẢO HÀNH & HỖ TRỢ KỸ THUẬT</h1>
+<h1>4. CHI PHÍ HẠ TẦNG CLOUD & TÊN MIỀN HÀNG NĂM (THAM KHẢO)</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th style="width:6%">STT</th>
+            <th style="width:30%">Hạng Mục</th>
+            <th style="width:40%">Thông Số Khuyến Nghị</th>
+            <th style="width:12%">Chu Kỳ</th>
+            <th style="width:12%">Chi Phí</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center">1</td>
+            <td><b>Máy chủ Cloud VPS Chuyên Dụng</b></td>
+            <td>4 CPU Cores, 8GB RAM, 100GB SSD NVMe, IP riêng (Viettel / VNPT Data Center)</td>
+            <td style="text-align:center">1 Năm</td>
+            <td class="price-text">3.600.000 ₫</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">2</td>
+            <td><b>Tên miền Doanh nghiệp (.vn / .com)</b></td>
+            <td>Tên miền thương hiệu riêng: <code>quangloi.vn</code> hoặc <code>quangloisecurity.com</code></td>
+            <td style="text-align:center">1 Năm</td>
+            <td class="price-text">450.000 - 750.000 ₫</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">3</td>
+            <td><b>Chứng chỉ bảo mật SSL HTTPS</b></td>
+            <td>Bảo mật dữ liệu đường truyền website</td>
+            <td style="text-align:center">Trọn đời</td>
+            <td class="price-text" style="color:#15803d;">MIỄN PHÍ</td>
+        </tr>
+        <tr class="total-row">
+            <td colspan="4" style="text-align:right;">TỔNG HẠ TẦNG NĂM ĐẦU TIÊN (DỰ KIẾN):</td>
+            <td class="price-text">~ 4.200.000 ₫/năm</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- ================================================================ -->
+<!-- 5. CAM KẾT CHẤT LƯỢNG & BẢO HÀNH                                 -->
+<!-- ================================================================ -->
+<h1>5. CHÍNH SÁCH BẢO HÀNH & BÀN GIAO MÃ NGUỒN</h1>
 
 <ul>
-    <li><b>Thời hạn bảo hành:</b> <b>12 tháng</b> tính từ ngày ký biên bản nghiệm thu bàn giao.</li>
-    <li><b>Phạm vi bảo hành:</b> Sửa chữa toàn bộ các lỗi phát sinh liên quan đến mã nguồn phần mềm hoàn toàn miễn phí.</li>
-    <li><b>Cam kết thời gian phản hồi:</b>
-        <ul>
-            <li>Sự cố khẩn cấp (hệ thống gián đoạn): Tiếp nhận và xử lý trong vòng <b>2 giờ</b> làm việc.</li>
-            <li>Yêu cầu hỗ trợ thông thường: Giải đáp và hỗ trợ trong vòng <b>4 - 8 giờ</b> làm việc.</li>
-        </ul>
-    </li>
-    <li><b>Bàn giao mã nguồn:</b> Bàn giao toàn bộ mã nguồn chương trình và cơ sở dữ liệu cho doanh nghiệp sở hữu vĩnh viễn, không thu phí bản quyền định kỳ hàng tháng.</li>
+    <li><b>Sở hữu vĩnh viễn:</b> Doanh nghiệp được bàn giao toàn bộ mã nguồn (Source code) và cơ sở dữ liệu, <b>không phải đóng phí thuê bao duy trì phần mềm hàng tháng</b>.</li>
+    <li><b>Bảo hành kỹ thuật:</b> <b>12 tháng</b> miễn phí toàn bộ lỗi kỹ thuật phát sinh kể từ ngày nghiệm thu.</li>
+    <li><b>Thời gian tiếp nhận:</b> Xử lý sự cố gián đoạn trong vòng <b>2 giờ</b> làm việc.</li>
 </ul>
 
 <!-- KHỐI KÝ TÊN -->
